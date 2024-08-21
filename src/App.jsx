@@ -112,7 +112,7 @@ function App() {
         setError('Error updating location: ' + err.message);
       });
     }
-  }, [location, name, id]);
+  }, [location]);
 
   return (
     <>
