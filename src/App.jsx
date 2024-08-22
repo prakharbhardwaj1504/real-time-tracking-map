@@ -6,6 +6,7 @@ import "leaflet/dist/leaflet.css";
 import "./App.css";
 import { Icon } from "leaflet";
 import marker from "./assets/marker.png";
+import Track from "./components/track";
 
 const db = getDatabase(app);
 
@@ -146,6 +147,7 @@ function App() {
         </Marker>
       </MapContainer>
       {/* MAPS ENDS */}
+      <Track/>
     </>
   );
 }
