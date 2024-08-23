@@ -61,6 +61,18 @@ const GetTracked = () => {
       .catch((err) => alert("Error saving data: " + err.message));
   };
 
+  // Update Firebase whenever location changes
+  useEffect(() => {
+    if (id.trim() !== "" && name.trim() !== "") {
+      set(ref(db, `user/${name}`), {
+        id: id,
+        name: name,
+        long: location.long,
+        lat: location.lat,
+      }).catch((err) => console.error("Error updating location: " + err.message));
+    }
+  }, [location]);
+
   useEffect(() => {
     if (navigator.geolocation) {
       const id = navigator.geolocation.watchPosition(
