@@ -77,4 +77,20 @@ button {
   padding: 0.7rem;
   font-weight: bold;
 }
+.heading{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: larger;
+  font-weight: 800;
+}
+.mainheading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: 1000;
+  
+}
+
 

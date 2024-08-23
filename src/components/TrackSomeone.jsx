@@ -41,6 +41,7 @@ const TrackSomeone = () => {
 
   return (
     <div>
+        <div className="mainheading">Track someone</div>
       <div>Enter the name of the person you want to track...</div>
       <input
         type="text"

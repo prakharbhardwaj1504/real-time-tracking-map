@@ -108,7 +108,12 @@ const GetTracked = () => {
 
   return (
     <div>
-      <div>Enter your details so that your well-wisher can locate you...</div>
+    {/* <div className="step">
+        <div className="heading">Follow these steps...</div>
+        <p>Allow app to access your location <br /> Enter id and name <br /> Once your location is identified , Enter "save Data"</p>  
+    </div> */}
+    <div className="mainheading">Get Tracked</div>
+      <div className="heading">Enter your details so that your well-wisher can locate you...</div>
       <label htmlFor="id">Enter ID</label>
       <input type="text" id="id" value={id} onChange={updateID} />
       <br />
@@ -132,6 +137,7 @@ const GetTracked = () => {
         </Marker>
         <MapUpdater position={[location.lat, location.long]} />
       </MapContainer>
+      
     </div>
   );
 };

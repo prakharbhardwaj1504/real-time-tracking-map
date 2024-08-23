@@ -10,6 +10,7 @@ function App() {
     <div>
       {view === null && (
         <>
+        <div className="mainheading">Real-time tracking Application</div>
           <button onClick={() => setView("getTracked")}>Get Tracked</button>
           <button onClick={() => setView("trackSomeone")}>Track Someone</button>
         </>
